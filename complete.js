@@ -6,7 +6,7 @@ $(startApp)
 
 function startApp() {
   ui.accountButton.click(toggleLogin)
-  ui.postMessageButton.click(postMessage)
+  ui.postMessageButton.click(postMessageToDb)
 
   onAuth(null);
   db.auth.onAuthStateChanged(onAuth);
@@ -70,7 +70,7 @@ function onMsgSnapshot(snapshot) {
     +  '</div>'
   ui.messageList.append(messageItem)
 }
-function postMessage() {
+function postMessageToDb() {
   var text = ui.messageInput.val();
   var name = state.user ? state.user.displayName : 'hackerz!';
   var uid = state.user && state.user.uid
