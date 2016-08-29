@@ -19,5 +19,6 @@ You can use index.html as a starting point. It contains jQuery and a basic html 
     - python3: python -m http.server 8000
     - https://gist.github.com/willurd/5720255
 4. Enable google auth in the firebase auth console.
-5. Create auth button and handler
-6. Create a guestbook using
+5. Create a guestbook using the firebase.database() and .auth()
+
+https://gitter.im/North-Shore-Startup-Hackers/Lobby
