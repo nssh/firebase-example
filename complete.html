@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Firebase Intro</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDubW7A2Yp5qo-dNpYNQ2BK2HOyBU842As",
+      authDomain: "ns-fire-example.firebaseapp.com",
+      databaseURL: "https://ns-fire-example.firebaseio.com",
+      storageBucket: "ns-fire-example.appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+<body>
+
+  <button id="accountButton"></button>
+  <div id="dashboard">
+    <div id="userInfo"></div>
+    <input id="messageInput"/> <button id="postMessage">Post Message</button>
+  </div>
+
+  <div id="messageList"></div>
+
+
+
+  <script src="complete.js"></script>
+</body>
+</html>
